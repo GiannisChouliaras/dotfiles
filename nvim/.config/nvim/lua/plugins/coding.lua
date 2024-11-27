@@ -24,15 +24,6 @@ return {
         config = true,
     },
 
-    -- Markdown
-    -- {
-    --     "MeanderingProgrammer/markdown.nvim",
-    --     main = "render-markdown",
-    --     opts = {},
-    --     name = "render-markdown",
-    --     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
-    -- },
-
     -- Harpoon by ThePrimeagen
     {
         "ThePrimeagen/harpoon",
@@ -112,5 +103,16 @@ return {
         opts = function(_, opts)
             table.insert(opts.sources, { name = "emoji" })
         end,
+    },
+
+    -- Adding Obsidian
+    {
+        "epwalsh/obsidian.nvim",
+        version = "*",
+        lazy = true,
+        ft = "markdown",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
     },
 }
