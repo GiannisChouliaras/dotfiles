@@ -88,6 +88,7 @@ return {
         end,
     },
 
+    -- symbols outline
     {
         "simrat39/symbols-outline.nvim",
         keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
@@ -97,6 +98,7 @@ return {
         },
     },
 
+    -- nvim cmp
     {
         "nvim-cmp",
         dependencies = { "hrsh7th/cmp-emoji" },
@@ -114,5 +116,24 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
+    },
+
+    -- Markdown
+    {
+        "MeanderingProgrammer/markdown.nvim",
+        main = "render-markdown",
+        opts = {},
+        name = "render-markdown",
+        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+    },
+
+    -- Markdown Preview
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function()
+            vim.fn["mkdp#util#install"]()
+        end,
     },
 }
