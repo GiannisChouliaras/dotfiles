@@ -30,6 +30,8 @@ alias bar 'bash ~/.config/polybar/launch_polybar.sh'
 alias greek 'setxkbmap -model pc104 -layout us,gr -option grp:win_space_toggle'
 alias so "source ~/.config/fish/config.fish"
 alias vpn "sudo openconnect -g vpn-agile -u ioannis.chouliaras@vodafone.com --useragen=AnyConnect vfras.vodafone.gr"
+alias oo "cd /home/ioannis-chouliaras/Documents/second_brain/"
+alias cof "nvim -p /home/ioannis-chouliaras/Documents/second_brain/inbox/*.md"
 alias m math
 alias tw tig
 alias fo black
@@ -57,6 +59,8 @@ source ~/.config/fish/my_functions/gc_data_beta_upload.fish
 source ~/.config/fish/my_functions/cloud_functions.fish
 source ~/.config/fish/my_functions/enable_disable_devices.fish
 source ~/.config/fish/my_functions/log_cloud_function.fish
+source ~/.config/fish/my_functions/create_obs_note.fish
+source ~/.config/fish/my_functions/organize_obs_notes.fish
 
 
 

@@ -50,6 +50,20 @@ keymap.set("i", ";a", "<ESC>", opts)
 keymap.set("i", ";a", "<ESC>", opts)
 keymap.set("v", ";a", "<ESC>", opts)
 
+--- navigate to vault
+vim.keymap.set(
+    "n",
+    "son",
+    ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
+    { desc = "Create new note with template" }
+)
+vim.keymap.set(
+    "n",
+    "sok",
+    ":!mv '%:p' /home/ioannis-chouliaras/Documents/second_brain/brain<cr>:bd<cr>",
+    { desc = "Move file to brain directory" }
+)
+vim.keymap.set("n", "sod", ":!rm '%:p'<cr>:bd<cr>", { desc = "Delete current file" })
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
     vim.diagnostic.goto_next()
