@@ -3,7 +3,7 @@ font pango:CaskaydiaCove NF 13
 
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id killall polybar
-exec_always feh --bg-fill ~/Pictures/vegeta.jpg
+exec_always feh --bg-fill ~/Pictures/sasuke.jpg
 exec_always xset r rate 200 150
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
