@@ -16,7 +16,7 @@ exec_always --no-startup-id killall polybar
 exec_always feh --bg-fill ~/Pictures/catppuccin1.jpg
 exec_always xset r rate 200 150
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 
@@ -33,6 +33,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 bindsym $mod+Return exec kitty
+bindsym $mod+z exec --no-startup-id i3lock -i ~/Pictures/catppuccin.png
 
 bindsym $mod+Shift+q kill
 
