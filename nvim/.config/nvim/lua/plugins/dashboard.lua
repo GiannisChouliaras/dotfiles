@@ -34,9 +34,9 @@ return {
         }
 
         -- Highlight the dashboard with Gruvbox colors
-        dashboard.section.header.opts.hl = "GruvboxYellow"
-        dashboard.section.buttons.opts.hl = "GruvboxBlue"
-        dashboard.section.footer.opts.hl = "GruvboxOrange"
+        -- dashboard.section.header.opts.hl = "GruvboxYellow"
+        -- dashboard.section.buttons.opts.hl = "GruvboxBlue"
+        -- dashboard.section.footer.opts.hl = "GruvboxOrange"
 
         -- Footer: Futuristic stats
         vim.api.nvim_create_autocmd("User", {
