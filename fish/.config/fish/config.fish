@@ -4,13 +4,21 @@ set uptime (uptime | awk -F'( |,|:)+' '{print $6" hours, "$7" minutes"}')
 set logged_users (who | wc -l)
 
 set fish_greeting "
+       ##### ## VFGR
+    ####    ####    
+  ####     #######  
+ ####         ##### 
+#####          #####
+ #####        ##### 
+  #####  ##  #####  
+
 🎉 Welcome, Ioannis Chouliaras!
 🌟 Data Engineer at Vodafone Greece 🌍
 --------------------------------------------------------------------------------------------------
-"
-
-# run neofetch on every new fish window
-neofetch
+🖥️ System: $os_name | Kernel: $kernel_version | Host: $hostname
+⏱️ Uptime: $uptime | 👤 Logged-in Users: $logged_users
+--------------------------------------------------------------------------------------------------
+💡 'Those who can imagine anything, can create the impossible.' – Alan Turing 🚀"
 echo -e $greeting
 
 set -gx TERM xterm-256color
