@@ -1,9 +1,25 @@
+set os_name (uname -s)
+set kernel_version (uname -r)
+set uptime (uptime | awk -F'( |,|:)+' '{print $6" hours, "$7" minutes"}')
+set logged_users (who | wc -l)
+
 set fish_greeting "
- _  _  __ ____  __  ____ __  __ _ ____ 
-/ )( \/  (    \/ _\(  __)  \(  ( (  __)
-\ \/ (  O ) D (    \) _|  O )    /) _) 
- \__/ \__(____|_/\_(__) \__/\_)__|____)
-"
+       ##### ## VFGR
+    ####    ####    
+  ####     #######  
+ ####         ##### 
+#####          #####
+ #####        ##### 
+  #####  ##  #####  
+
+🎉 Welcome, Ioannis Chouliaras!
+🌟 Data Engineer at Vodafone Greece 🌍
+--------------------------------------------------------------------------------------------------
+🖥️ System: $os_name | Kernel: $kernel_version | Host: $hostname
+⏱️ Uptime: $uptime | 👤 Logged-in Users: $logged_users
+--------------------------------------------------------------------------------------------------
+💡 'Those who can imagine anything, can create the impossible.' – Alan Turing 🚀"
+echo -e $greeting
 
 set -gx TERM xterm-256color
 

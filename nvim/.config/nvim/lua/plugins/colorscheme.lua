@@ -1,58 +1,58 @@
--- return {
---     "catppuccin/nvim",
---     name = "catppuccin",
---     priority = 1000,
---     background = { dark = "mocha" },
---     opts = {
---         transparent_background = true,
---     },
--- }
 return {
-    "ellisonleao/gruvbox.nvim",
-    name = "gruvbox",
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
+    background = { dark = "mocha" },
     opts = {
-        terminal_colors = true,
-        transparent_mode = true,
-        bold = false,
-        italic = {
-            strings = false,
-            comments = true,
-        },
-        palette_overrides = {
-            bg = "#1b1d1e", -- Keeping the dark background for a neutral base
-            fg = "#bfa05d", -- A softer golden yellow, less vibrant and easier on the eyes
-
-            black = "#1b1d1e", -- Same as background
-            bright_black = "#2c2c2c", -- Slightly faded black for contrast
-
-            red = "#c97b6a", -- Muted red, inspired by Goku's gi but softer
-            bright_red = "#d4948b", -- A smoother, less striking red for highlights
-
-            green = "#6c8973", -- Faded Namekian green, easy on the eyes
-            bright_green = "#8ea393", -- Subtler bright green for accents
-
-            yellow = "#e8c86b", -- Faded golden yellow for a softer energy effect
-            bright_yellow = "#f1d08f", -- A smooth golden hue, less harsh
-
-            blue = "#6a7c9b", -- Soft blue inspired by Vegeta's armor but toned down
-            bright_blue = "#8aa1c4", -- A faded sky blue for accents
-
-            purple = "#8b7a9d", -- Soft purple, inspired by Whis but subtle
-            bright_purple = "#a496b3", -- Faded light purple for highlighting
-
-            aqua = "#6a9b9b", -- Teal shade, faded for a calmer energy blast
-            bright_aqua = "#8fbcbc", -- Soft aqua, smoother for visual comfort
-
-            white = "#bfbfbf", -- Neutral off-white
-            bright_white = "#d9d9d9", -- Brighter off-white, but still gentle
-        },
-        inverse = false,
-        dim_inactive = false,
-        contrast = "hard",
+        transparent_background = true,
     },
 }
+-- return {
+--     "ellisonleao/gruvbox.nvim",
+--     name = "gruvbox",
+--     lazy = false,
+--     priority = 1000,
+--     opts = {
+--         terminal_colors = true,
+--         transparent_mode = true,
+--         bold = false,
+--         italic = {
+--             strings = false,
+--             comments = true,
+--         },
+--         palette_overrides = {
+--             bg = "#1b1d1e", -- Keeping the dark background for a neutral base
+--             fg = "#bfa05d", -- A softer golden yellow, less vibrant and easier on the eyes
+--
+--             black = "#1b1d1e", -- Same as background
+--             bright_black = "#2c2c2c", -- Slightly faded black for contrast
+--
+--             red = "#c97b6a", -- Muted red, inspired by Goku's gi but softer
+--             bright_red = "#d4948b", -- A smoother, less striking red for highlights
+--
+--             green = "#6c8973", -- Faded Namekian green, easy on the eyes
+--             bright_green = "#8ea393", -- Subtler bright green for accents
+--
+--             yellow = "#e8c86b", -- Faded golden yellow for a softer energy effect
+--             bright_yellow = "#f1d08f", -- A smooth golden hue, less harsh
+--
+--             blue = "#6a7c9b", -- Soft blue inspired by Vegeta's armor but toned down
+--             bright_blue = "#8aa1c4", -- A faded sky blue for accents
+--
+--             purple = "#8b7a9d", -- Soft purple, inspired by Whis but subtle
+--             bright_purple = "#a496b3", -- Faded light purple for highlighting
+--
+--             aqua = "#6a9b9b", -- Teal shade, faded for a calmer energy blast
+--             bright_aqua = "#8fbcbc", -- Soft aqua, smoother for visual comfort
+--
+--             white = "#bfbfbf", -- Neutral off-white
+--             bright_white = "#d9d9d9", -- Brighter off-white, but still gentle
+--         },
+--         inverse = false,
+--         dim_inactive = false,
+--         contrast = "hard",
+--     },
+-- }
 
 -- return {
 --     "folke/tokyonight.nvim",
