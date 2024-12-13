@@ -7,16 +7,11 @@ return {
 
         -- Sleek futuristic logo
         local logo = [[
-
-
-
- ██████╗██╗  ██╗ ██████╗ ██╗   ██╗██╗        ██╗ ██████╗ 
-██╔════╝██║  ██║██╔═══██╗██║   ██║██║        ██║██╔═══██╗
-██║     ███████║██║   ██║██║   ██║██║        ██║██║   ██║
-██║     ██╔══██║██║   ██║██║   ██║██║        ██║██║   ██║
-╚██████╗██║  ██║╚██████╔╝╚██████╔╝███████╗██╗██║╚██████╔╝
- ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝╚═╝ ╚═════╝ 
-                                                         
+       _                 _   _       
+   ___| |__   ___  _   _| | (_) ___  
+  / __| '_ \ / _ \| | | | | | |/ _ \ 
+ | (__| | | | (_) | |_| | |_| | (_) |
+  \___|_| |_|\___/ \__,_|_(_)_|\___/ 
         ]]
 
         dashboard.section.header.val = vim.split(logo, "\n")
@@ -33,10 +28,11 @@ return {
             dashboard.button("q", "󰩈  Quit", "<cmd>qa<cr>"),
         }
 
-        -- Highlight the dashboard with Gruvbox colors
-        -- dashboard.section.header.opts.hl = "GruvboxYellow"
-        -- dashboard.section.buttons.opts.hl = "GruvboxBlue"
-        -- dashboard.section.footer.opts.hl = "GruvboxOrange"
+        -- Apply Catppuccin highlights
+        vim.cmd.colorscheme("catppuccin")
+        dashboard.section.header.opts.hl = "CatppuccinGreen"
+        dashboard.section.buttons.opts.hl = "CatppuccinBlue"
+        dashboard.section.footer.opts.hl = "CatppuccinOrange"
 
         -- Footer: Futuristic stats
         vim.api.nvim_create_autocmd("User", {
